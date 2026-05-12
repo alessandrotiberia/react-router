@@ -5,6 +5,7 @@ import heroImg from './assets/hero.png'
 import Navbar from './components/Navbar'
 import Home from './components/Home'
 import Info from './components/Info'
+import Products from './components/Products'
 import './App.css'
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Navbar />
       <Info />
       <Home />
+      <Products />
     </>
   
 }
