@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 
 //creo navbar dove collego dove contattarci, chi siamo ecc
 function Navbar() {
@@ -6,9 +6,9 @@ function Navbar() {
     return <>
     <nav>
         <ul>
-            <li><a href="/">Chi siamo</a></li>
-            <li><a href="/">Prodotti</a></li>
-            <li><a href="/">Contattaci</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/chi-siamo">Chi siamo</Link></li>
+            <li><Link to="/contattaci">contattaci</Link></li>
         </ul>
     </nav>
     </>
