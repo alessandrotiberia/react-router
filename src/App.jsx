@@ -6,17 +6,26 @@ import Navbar from './components/Navbar'
 import Home from './components/Home'
 import Info from './components/Info'
 import Products from './components/Products'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css'
 
 function App() {
 
   return <>
+    <BrowserRouter>
+
       <Navbar />
-      <Info />
-      <Home />
-      <Products />
-    </>
-  
+
+      <Routes>
+        {/* Correzione 3: Usiamo Route e passiamo i componenti come tag JSX, utilizzando i nomi importati in alto */}
+        <Route path="/" element={<Home />} />
+        <Route path="/chi-siamo" element={<Info />} />
+        <Route path="/prodotti" element={<Products />} />
+
+      </Routes>
+    </BrowserRouter>
+  </>
+
 }
 
 export default App
