@@ -4,7 +4,7 @@ import { useState } from "react";
 function Products() {
 
     //ARRAY vuoto dobve mettere prodotti
-    const [Products, setProducts] = useState([]);
+    const [products, setProducts] = useState([]);
     
     useEffect(() => {
 
@@ -17,6 +17,19 @@ function Products() {
     }, []);
 
     return <>
+        <div>
+            <h1>Nostri prodotti</h1>
+        </div>
+
+        <div>
+            {products.map((product) => (
+                <div key={product.id} className="productCard">
+                    <h2>{product.title}</h2>
+                    <img src={product.image} alt={product.title} width= "150" />
+                    <p>prezzo : {product.price}</p>
+                </div>
+            ))}
+        </div>
 
 
     </>
