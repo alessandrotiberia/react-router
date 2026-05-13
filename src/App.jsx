@@ -22,6 +22,7 @@ function App() {
         <Route path="/chi-siamo" element={<Info />} />
         <Route path="/prodotti" element={<Products />} />
 
+        <Route path="/prodotto/:id" element={<ProductDetail />} />
       </Routes>
     </BrowserRouter>
   </>

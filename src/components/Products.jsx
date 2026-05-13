@@ -23,11 +23,11 @@ function Products() {
 
         <div>
             {products.map((product) => (
-                <div key={product.id} className="productCard">
+                <Link key={product.id} to={`/prodotto/${product.id}`}className="productCard">
                     <h2>{product.title}</h2>
                     <img src={product.image} alt={product.title} width= "150" />
                     <p>prezzo : {product.price}</p>
-                </div>
+                </Link>
             ))}
         </div>
 
