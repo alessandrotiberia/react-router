@@ -7,6 +7,7 @@ import Home from './components/Home'
 import Info from './components/Info'
 import Products from './components/Products'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import ProductDetail from './components/ProductDetail'
 import './App.css'
 
 function App() {
